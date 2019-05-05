@@ -1,0 +1,13 @@
+# Info for the schoreboard
+authors:
+  - bboe
+allow_egress: False
+flag: "OOO{FORCES-GOVERN+TUBE+FRUIT_GROUP=FALLREMEMBER_WEATHER}"
+description: "Everything you need is in this file."
+public_files:
+  - public/puzzle.gif
+service_name: "puzzle"
+tags:
+  - potpourri
+type: normal
+violates_flag_format: false
