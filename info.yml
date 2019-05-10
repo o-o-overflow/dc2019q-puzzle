@@ -5,8 +5,8 @@ allow_egress: False
 flag: "OOO{FORCES-GOVERN+TUBE+FRUIT_GROUP=FALLREMEMBER_WEATHER}"
 description: "Everything you need is in this file."
 public_files:
-  - public/puzzle.gif
-service_name: "puzzle"
+  - public/redacted-puzzle.gif
+service_name: "redacted-puzzle"
 tags:
   - potpourri
 type: normal

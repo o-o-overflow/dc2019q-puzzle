@@ -9,10 +9,9 @@ ALPHABET = "+-=ABCDEFGHIJKLMNOPQRSTUVWXYZ_{}"
 DEBUG = False
 DEBUG_COLOR = 127
 DEGREES = (-112.5, -67.5, -22.5, 22.5, 67.5, 112.5, 157.5, -157.5)
-DIMMING = (255, 63, 15, 7, 1)
 FONT = ImageFont.truetype("/Library/Fonts/Microsoft/Georgia", 32)
 FRAME_DURATION = 250
-HIDDEN_COLOR = 100 if DEBUG else 1
+HIDDEN_COLOR = 1
 IMAGE_WIDTH = 1280
 IMAGE_HEIGHT = 720
 MESSAGE_X_POSITION = 167
@@ -43,7 +42,7 @@ def circle_point(degree):
 
 
 def draw_character(draw, character, dim=0, rotation=0):
-    color = DIMMING[dim]
+    color = 255
     points = []
     for i, bit in enumerate(to_bit_array([character], 8)):
         if bit:
@@ -127,10 +126,6 @@ def main():
                 image.copy(),
                 index,
                 character,
-                (translated[index - 4], 4),
-                (translated[index - 3], 3),
-                (translated[index - 2], 2),
-                (translated[index - 1], 1),
             )
         )
     images[0].save(
