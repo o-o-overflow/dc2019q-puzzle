@@ -12,8 +12,9 @@ pip install -r requirements.txt
 ./puzzle.py "FLAG"
 ```
 
-## Minimize gif size
+## Collapse color map
 
 1. Open gif with tool like gimp.
-2. Adjust the colormap such that the color (1, 1, 1) is also the color (0, 0, 0)
+2. Adjust the colormap such that all 3 colors are black (I couldn't quickly figure out how to get
+   this directly working in pillow).
 3. Re-export as an interlaced animated gif (accept existing timings).
